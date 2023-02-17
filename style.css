@@ -18,6 +18,17 @@ textarea {
   height: 100%;
 }
 
+.title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    color: #858585;
+}
+
 .logo {
   width: 157px;
   height: 56px;
@@ -65,7 +76,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1920px;
+  width: 100%;
   height: 500px;
   background-image: url(./img/intro.png);
   color: #fff;
@@ -100,7 +111,58 @@ textarea {
   border-radius: 15px;
 }
 
+.intro__button:hover {
+    color: #000;
+    background-color: #ffc222;
+}
+
 .docs {
     height: 1030px;
 
+}
+
+/* Company */
+
+.company {
+    height: 292px;
+    color: #fff;
+
+    background: url(./img/company.png) no-repeat;
+}
+
+.company__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Consult */
+
+.consult {
+    height: 1030px;
+}
+
+/* Advantages */
+
+.adv {
+    height: 332px;
+    background: url(./img/advantages.png) no-repeat;
+
+}
+
+/* About */
+
+.about {
+    height: 1030px;
+}
+
+
+/* Reviews */
+
+/* Footer */
+
+.footer {
+    bottom: 0;
+    height: 492px;
+    background: #1E303D;
+    border-radius: 20px;
 }
