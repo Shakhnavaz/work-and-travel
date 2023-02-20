@@ -19,14 +19,14 @@ textarea {
 }
 
 .title {
-    font-weight: 600;
-    font-size: 30px;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .subtitle {
-    font-weight: 400;
-    font-size: 20px;
-    color: #858585;
+  font-weight: 400;
+  font-size: 20px;
+  color: #858585;
 }
 
 .logo {
@@ -93,10 +93,15 @@ textarea {
   font-weight: 500;
   font-size: 20px;
   margin: 33px;
+  width: 771px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .intro__button {
-  background: url(./img/arrow.png) 15px 50% no-repeat;
+  background: url(./img/arrow.png) no-repeat;
 
   width: 195px;
   height: 51px;
@@ -108,61 +113,225 @@ textarea {
   cursor: pointer;
   border: 1px solid #ffc222;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .intro__button:hover {
-    color: #000;
-    background-color: #ffc222;
+  color: #000;
+  background-color: #ffc222;
+  transition: 0.3s;
 }
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ffc222;
+  border-radius: 10px;
+  font-weight: 500;
+  background: url(./img/arrow.png) no-repeat;
+}
+
+.btn1:hover {
+  color: #000;
+  background-color: #ffc222;
+  transition: 0.3s;
+}
+
+/* Documents and Services*/
 
 .docs {
-    height: 1030px;
+  height: 1030px;
+}
+
+.docs__title {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.docs__title::before {
+  display: inline;
+  color: rgba(255, 194, 34, 1);
+  width: 107px;
+  height: 1px;
+}
+
+.docs__subtitle {
+  margin: 50px auto;
+  width: 522px;
+  height: 210px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #858585;
+}
+
+.all__services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  height: 335px;
+  width: 378px;
+  color: #000;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.service:hover {
+    background: #324451;
+    color: #fff;
 
 }
+
+.service1 {
+}
+
+.service__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.service__text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.service__btn {
+
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 210px;
+    height: 45px;
+    font-size: 14px;
+  }
 
 /* Company */
 
 .company {
-    height: 292px;
-    color: #fff;
+  height: 292px;
+  color: #fff;
+  background: url(./img/company.png) no-repeat;
+}
 
-    background: url(./img/company.png) no-repeat;
+.company__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .company__title {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.company__subtitle {
+  width: 834px;
+  height: 75px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.company__btn {
+  width: 209px;
+  height: 40px;
 }
 
 /* Consult */
 
 .consult {
-    height: 1030px;
+  height: 1030px;
 }
 
 /* Advantages */
 
 .adv {
-    height: 332px;
-    background: url(./img/advantages.png) no-repeat;
-
+  height: 332px;
+  background: url(./img/advantages.png) no-repeat;
 }
 
 /* About */
 
 .about {
-    height: 1030px;
+  height: 1030px;
 }
 
-
 /* Reviews */
+
+.reviews {
+}
 
 /* Footer */
 
 .footer {
-    bottom: 0;
-    height: 492px;
-    background: #1E303D;
-    border-radius: 20px;
+  color: #fff;
+  bottom: 0;
+  height: 492px;
+  background: #1e303d;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.footer__title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.footer__inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__left {
+  height: 324px;
+  width: 50%;
+}
+
+.footer__right {
+  height: 324px;
+  width: 50%;
+  background: url(./img/map.png) no-repeat;
+}
+
+.footer__btn {
+  width: 245px;
+  height: 54px;
+  font-size: 14px;
+}
+
+.info {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.number::before {
+  width: 24px;
+  height: 23px;
+  content: "";
+  background: url(./img/icons/иконка-1.png);
 }
