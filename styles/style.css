@@ -8,8 +8,17 @@ body {
 input,
 select,
 textarea {
+  padding: 0;
+  margin: 0;
   font-weight: 14;
   font-family: "Roboto", sans-serif;
+}
+
+input[type="text"] {
+  font-family: inherit; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0; /* 2 */
 }
 
 .wrapper {
@@ -18,9 +27,18 @@ textarea {
   height: 100%;
 }
 
-.title {
+.title-left {
   font-weight: 600;
   font-size: 30px;
+}
+
+.title-center {
+  margin-top: 200px;
+  font-weight: 600;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
@@ -29,10 +47,20 @@ textarea {
   color: #858585;
 }
 
+.subtitle-center {
+  margin: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #858585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   width: 157px;
   height: 56px;
-  background-image: url(./img/logo1.png);
+  background-image: url(/img/logo1.png);
 }
 
 .header {
@@ -41,6 +69,10 @@ textarea {
   right: 0;
   width: 100%;
   height: 128px;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 #424242;
 }
 
 .header__inner {
@@ -72,13 +104,14 @@ textarea {
 /* Intro */
 
 .intro {
+  margin-top: 128px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 500px;
-  background-image: url(./img/intro.png);
+  background-image: url(/img/intro.png);
   color: #fff;
 }
 
@@ -101,7 +134,7 @@ textarea {
 }
 
 .intro__button {
-  background: url(./img/arrow.png) no-repeat;
+  background: url(/img/arrow.png) no-repeat;
 
   width: 195px;
   height: 51px;
@@ -130,7 +163,7 @@ textarea {
   border: 1px solid #ffc222;
   border-radius: 10px;
   font-weight: 500;
-  background: url(./img/arrow.png) no-repeat;
+  background: url(/img/arrow.png) no-repeat;
 }
 
 .btn1:hover {
@@ -158,13 +191,6 @@ textarea {
   line-height: 35px;
 }
 
-.docs__title::before {
-  display: inline;
-  color: rgba(255, 194, 34, 1);
-  width: 107px;
-  height: 1px;
-}
-
 .docs__subtitle {
   margin: 50px auto;
   width: 522px;
@@ -177,6 +203,8 @@ textarea {
 
   color: #858585;
 }
+
+/* services */
 
 .all__services {
   display: flex;
@@ -192,40 +220,56 @@ textarea {
 }
 
 .service:hover {
-    background: #324451;
-    color: #fff;
-
+  background: #324451;
+  color: #fff;
 }
 
-.service1 {
+.service__icon {
+  margin: 30px auto;
+
+  height: 60px;
+  width: 60px;
+}
+
+.service__icon1 {
+  background-image: url(/img/icons/icon1.png);
+}
+
+.service__icon2 {
+  background-image: url(/img/icons/icon2.png);
+}
+
+.service__icon3 {
+  background-image: url(/img/icons/icon3.png);
 }
 
 .service__title {
   font-weight: 600;
   font-size: 22px;
+  text-align: center;
 }
 
 .service__text {
+  margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
 }
 
 .service__btn {
-
-    margin: 0 auto;
-    margin-top: 120px;
-    width: 210px;
-    height: 45px;
-    font-size: 14px;
-  }
+  margin: 0 auto;
+  margin-top: 120px;
+  width: 210px;
+  height: 45px;
+  font-size: 14px;
+}
 
 /* Company */
 
 .company {
   height: 292px;
   color: #fff;
-  background: url(./img/company.png) no-repeat;
+  background: url(/img/company.png) no-repeat;
 }
 
 .company__inner {
@@ -260,13 +304,82 @@ textarea {
 
 .consult {
   height: 1030px;
+  margin: 200px 0;
+}
+
+.consult__wrapper {
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+    height: 100%;
+}
+
+.consult__left {
+  display: block;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 15px;
+  color: rgba(133, 133, 133, 1);
+  width: 680px;
+  height: 500px;
+}
+
+.consult__right {
+  width: 680px;
+  height: 500px;
+  
+}
+
+label {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(133, 133, 133, 1);
+}
+
+.consult__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consult__subtitle {
+  margin: 32px auto;
+  width: 489px;
+  height: 90px;
+  text-align: center;
+}
+
+.consult input,
+select {
+  display: block;
+
+  padding: 0;
+  margin: 12px 0;
+  width: 400px; /* 414 */
+  height: 54px;
+  border: 1px solid rgba(133, 133, 133, 1);
+  outline: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.consult textarea {
+  width: 670px;
+  height: 268px;
+  border-radius: 8px;
+}
+
+.consult__button {
+  width: 245px;
+  height: 54px;
 }
 
 /* Advantages */
 
 .adv {
   height: 332px;
-  background: url(./img/advantages.png) no-repeat;
+  background: url(/img/advantages.png) no-repeat;
 }
 
 /* About */
@@ -278,6 +391,15 @@ textarea {
 /* Reviews */
 
 .reviews {
+  width: 100%;
+  height: 550px;
+  margin: 200px auto;
+}
+
+.review__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
@@ -310,7 +432,7 @@ textarea {
 .footer__right {
   height: 324px;
   width: 50%;
-  background: url(./img/map.png) no-repeat;
+  background: url(/img/map.png) no-repeat;
 }
 
 .footer__btn {
@@ -333,5 +455,5 @@ textarea {
   width: 24px;
   height: 23px;
   content: "";
-  background: url(./img/icons/иконка-1.png);
+  background: url(/img/icons/иконка-1.png);
 }

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
 
     <title>Main</title>
 
@@ -23,7 +23,7 @@
 
           <nav class="nav">
             <a class="nav__link" href="">Главная</a>
-            <a class="nav__link" href="">Услуги</a>
+            <a class="nav__link" href="/services.html">Услуги</a>
             <a class="nav__link" href="">О компании</a>
             <a class="nav__link" href="">О программе</a>
             <a class="nav__link" href="">Отзывы</a>
@@ -36,7 +36,9 @@
     <!-- Intro -->
 
     <div class="intro">
-      <div class="intro__title">DAGCORPORATION WORK AND TRAVEL USA 2022</div>
+      <div class="intro__title">
+        IMPROVING LIFE WITHOUT LIMITS WORK AND TRAVEL USA 2022
+      </div>
       <div class="intro__text">
         Зарабатывай, путешествуя по Америке. Узнай реальный английский, получи
         незабываемые эмоции и жизненный опыт. Выбирай крутое лето!
@@ -64,12 +66,15 @@
 
         <div class="all__services">
           <div class="service service1">
+            <div class="service__icon service__icon1"></div>
             <div class="service__title">Work and Travel Greenheart</div>
             <div class="service__text">
               Трудоустройство из базы работодателей Greenheart
             </div>
           </div>
           <div class="service service2">
+            <div class="service__icon service__icon2"></div>
+
             <div class="service__title">Work and Travel Greenheart</div>
             <div class="service__text">
               Трудоустройство от DagCorporation! Предоставление жилья, встреча в
@@ -77,6 +82,8 @@
             </div>
           </div>
           <div class="service service3">
+            <div class="service__icon service__icon3"></div>
+
             <div class="service__title">Work and Travel Greenheart</div>
             <div class="service__text">
               Трудоустройство от DagCorporation! Предоставление жилья, встреча в
@@ -94,7 +101,7 @@
     <div class="company">
       <div class="wrapper">
         <div class="company__inner">
-          <div class="title">О компании</div>
+          <div class="title-left">О компании</div>
           <div class="company__subtitle">
             Мы специализируемся на предоставлении работы в США уже 20 лет, знаем
             о программе все и даже чуть больше, способны ответить абсолютно на
@@ -109,22 +116,38 @@
     <!-- Consult - Получить Консультацию-->
 
     <div class="consult">
+      <div class="title-left consult__title">Получить консультацию</div>
+      <div class="subtitle consult__subtitle">
+        Комплексный подход к вашему вопросу, своевременная помощь от наших
+        сотрудников, поможем собрать полный пакет документов.
+      </div>
       <div class="wrapper">
-        <div class="title">Получить консультацию</div>
-        <div class="subtitle">
-          Комплексный подход к вашему вопросу, своевременная помощь от наших
-          сотрудников, поможем собрать полный пакет документов.
+        <div class="consult__wrapper">
+          <div class="consult__left">
+            <label for="name">ФИО</label>
+            <input class="consult__input" type="text" />
+
+            <label for="number">Контактный телефон</label>
+            <input class="consult__input" type="text" />
+
+            <label for="email">E-mail</label>
+            <input class="consult__input" type="text" />
+
+            <label for="email">Тема вопроса</label>
+            <select name="" id="">
+              <option value="">Как подтянуть английский?</option>
+              <option value="">Как устроиться на работу?</option>
+              <option value="">Сколько будет длиться поездка?</option>
+              <option value="">Куда отправлять данные?</option>
+            </select>
+          </div>
+
+          <div class="consult__right">
+            <label for="">Сообщение</label>
+            <textarea name="" id=""></textarea>
+            <div class="btn1 consult__button">Бесплатная консультация</div>
+          </div>
         </div>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <select name="" id="">
-          <option value="">Как подтянуть английский</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
       </div>
     </div>
 
@@ -138,7 +161,7 @@
 
     <div class="about">
       <div class="wrapper">
-        <div class="title">О программе</div>
+        <div class="title-left">О программе</div>
         <div class="subtitle">
           Комплексный подход к вашему вопросу, своевременная помощь от наших
           сотрудников, поможем собрать полный пакет документов.
@@ -148,7 +171,9 @@
 
     <!-- Reviews - Отзывы -->
     <div class="reviews">
-      <div class="wrapper">ОТЗЫВЫ</div>
+      <div class="wrapper">
+        <div class="title-left review__title">ОТЗЫВЫ</div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -173,6 +198,12 @@
         </div>
       </div>
     </footer>
+    <!-- <aside class="left-bar">
+        <button class="button"></button>
+        <div class="logo"></div>
+    </aside> -->
   </head>
-  <body></body>
+  <body>
+    <script src="./app.js"></script>
+  </body>
 </html>
